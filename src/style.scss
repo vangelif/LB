@@ -1,0 +1,22 @@
+$color-blue: lightskyblue;
+$color-coral: lightcoral;
+$color-yellow: lightgoldenrodyellow;
+$fontsize-L: 26px;
+$fontsize-M: 16px;
+$fontsize-XL: 34px;
+
+h1 {
+  color: $color-blue;
+}
+
+section {
+  h2 {
+    color: color-coral;
+  }
+
+  p {
+    color: $color-yellow;
+    font-size: $fontsize-XL;
+  }
+}
+
