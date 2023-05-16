@@ -117,6 +117,7 @@ body {
 
       .left-bottom {
         font-size: $fontsize-L;
+
         ul {
           li {
             // border-bottom: 1px solid $color-b;
@@ -125,6 +126,7 @@ body {
             // align-self: center;
             // place-items: center;
           }
+
           li:nth-child(even) {
             background-color: $color-grey;
           }
