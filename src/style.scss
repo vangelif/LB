@@ -20,8 +20,9 @@ body {
 
   h1 {
     font-size: $fontsize-XL;
-    text-align: center;
+    text-align: start;
     color: $color-blue;
+    margin-left: 30px;
   }
 
   button {
@@ -29,7 +30,6 @@ body {
     cursor: pointer;
     border-radius: 3px;
     padding-block: 3%;
-    padding-inline: 1%;
     width: 20%;
     background-color: $color-blue;
     font-size: $fontsize-M;
@@ -77,10 +77,8 @@ body {
           border-radius: 3px;
           background-color: $color-blue;
           font-size: $fontsize-M;
-          padding-block: 3%;
-          padding-inline: 1%;
+          margin-left: 200px;
           width: 40%;
-          margin: 0 auto;
           cursor: pointer;
         }
 
@@ -97,8 +95,10 @@ body {
       flex-direction: column;
       border-right: 5px dotted $color-blue;
       width: 47%;
+      border: 5px dotted $color-blue;
 
       .left-top {
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -116,16 +116,11 @@ body {
       }
 
       .left-bottom {
+        width: 100%;
         font-size: $fontsize-L;
 
         ul {
-          li {
-            // border-bottom: 1px solid $color-b;
-            // margin: 3%;
-            // text-align: center;
-            // align-self: center;
-            // place-items: center;
-          }
+          margin-left: -38px;
 
           li:nth-child(even) {
             background-color: $color-grey;
