@@ -14,7 +14,7 @@ const renderScore = () => {
   scoreBoard.forEach((item) => {
     const li = document.createElement('li');
     li.innerHTML = `
-    <li>${item.name} ➡️ ${item.score} ${' '} ✔️</li></br>
+    ${item.name} ➡️ ${item.score} ${' '} ✔️</br>
     `;
     parentList.appendChild(li);
   });

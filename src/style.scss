@@ -29,7 +29,7 @@ body {
     border: 2px solid $color-b;
     cursor: pointer;
     border-radius: 3px;
-    padding-block: 3%;
+    padding-block: 2%;
     width: 20%;
     background-color: $color-blue;
     font-size: $fontsize-M;
@@ -102,7 +102,6 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-
         h2 {
           width: 50%;
           font-size: $fontsize-XL;
@@ -121,7 +120,9 @@ body {
 
         ul {
           margin-left: -38px;
-
+          li {
+            margin-bottom: 15px;
+          }
           li:nth-child(even) {
             background-color: $color-grey;
           }
