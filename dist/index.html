@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LB</title>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  <body>
+    <h1>Leaderboard</h1>
+    <div class="container">
+      <section class="left">
+        <div class="left-top">
+          <h2>Recent Scores</h2>
+          <button>Refresh</button>
+        </div>
+        <div class="left-bottom">
+          <ul id="parent-list">
+            <!-- <li>Vangelis: 100 points</li>
+            <li>Marina: 100 points</li>
+            <li>Xu Yan: 100 points</li> -->
+          </ul>
+        </div>
+      </section>
+      <section class="right">
+        <div>
+          <h2>Add your Score</h2>
+          <form id="form">
+            <input
+              id="name"
+              type="text"
+              placeholder="✍️ Insert your name.."
+              required
+            />
+
+            <input
+              id="number"
+              type="number"
+              placeholder="🎯 Insert your score.."
+              required
+            />
+            <!-- <button>Submit</button> -->
+          </form>
+          <button id="add">Submit</button>
+        </div>
+      </section>
+    </div>
+    <script defer type="module" src="./index.js"></script>
+  </body>
+</html>

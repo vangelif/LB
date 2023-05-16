@@ -1,0 +1,132 @@
+$color-blue: lightskyblue;
+$color-coral: lightcoral;
+$color-yellow: lightgoldenrodyellow;
+$color-b: black;
+$color-grey: lightgray;
+
+$fontsize-L: 26px;
+$fontsize-M: 16px;
+$fontsize-XL: 34px;
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+
+  h1 {
+    font-size: $fontsize-XL;
+    text-align: start;
+    color: $color-blue;
+    margin-left: 30px;
+  }
+
+  button {
+    border: 2px solid $color-b;
+    cursor: pointer;
+    border-radius: 3px;
+    padding-block: 3%;
+    width: 20%;
+    background-color: $color-blue;
+    font-size: $fontsize-M;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .right {
+      display: flex;
+      width: 47%;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          text-align: center;
+          font-size: $fontsize-XL;
+        }
+
+        form {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        input[type='text'],
+        input[type='number'] {
+          width: 80%;
+          height: 20%;
+          text-align: center;
+          font-size: $fontsize-M;
+          padding-inline: 5%;
+          padding-block: 3%;
+          border: 3px solid $color-b;
+          border-radius: 5px;
+          margin: 1%;
+        }
+
+        button {
+          border: 2px solid $color-b;
+          border-radius: 3px;
+          background-color: $color-blue;
+          font-size: $fontsize-M;
+          margin-left: 200px;
+          width: 40%;
+          cursor: pointer;
+        }
+
+        button:hover {
+          border-right: 8px solid $color-b;
+          border-bottom: 8px solid $color-b;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      border-right: 5px dotted $color-blue;
+      width: 47%;
+      border: 5px dotted $color-blue;
+
+      .left-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h2 {
+          width: 50%;
+          font-size: $fontsize-XL;
+        }
+
+        button:hover {
+          border-right: 8px solid $color-b;
+          border-bottom: 8px solid $color-b;
+          font-weight: 700;
+        }
+      }
+
+      .left-bottom {
+        width: 100%;
+        font-size: $fontsize-L;
+
+        ul {
+          margin-left: -38px;
+
+          li:nth-child(even) {
+            background-color: $color-grey;
+          }
+        }
+      }
+    }
+  }
+}
