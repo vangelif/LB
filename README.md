@@ -56,10 +56,6 @@
 - **[Use of Webpack configuration]**
 - **[Use of professional documentation]**
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- <a href="https://vangelif.github.io/Leaderboard/">Check out the live demo</a>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 By following below steps a new developer can make instant use of the project.
@@ -103,7 +99,7 @@ To run the project, use Visual Studio Code Liver Server:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, <a href="https://github.com/vangelif/Leaderboard/issues">issues, and feature requests are welcome</a>! Feel free to come in touch with the author.
+Contributions, <a href="https://github.com/vangelif/LB/issues">issues, and feature requests are welcome</a>! Feel free to come in touch with the author.
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -116,4 +112,3 @@ For this project many hours have been invested. For that reason, I would like to
 ## 📝 License <a name="license"></a>
 
 This project is <a href="https://github.com/vangelif/Portfolio/blob/popup-window/license.md">MIT licensed</a>.
-

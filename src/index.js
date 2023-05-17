@@ -1,30 +1,41 @@
 import './style.scss';
-import addScore from './modules/addScore.js';
+import sendScore from './modules/sendScore.js';
 
 const submit = document.getElementById('add');
 const insertedName = document.getElementById('name');
 const insertedScore = document.getElementById('number');
 const parentList = document.getElementById('parent-list');
 const form = document.getElementById('form');
+const refresh = document.getElementById('refresh');
 
-let scoreBoard = [];
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/';
 
-const renderScore = () => {
+const renderScore = async () => {
   parentList.innerHTML = '';
-  scoreBoard.forEach((item) => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-    <li>${item.name} ➡️ ${item.score} ${' '} ✔️</li></br>
+  await fetch(api)
+    .then((response) => response.json())
+    .then((json) => {
+      const scoreBoard = json.result;
+
+      scoreBoard.forEach((item) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+    ${item.user} ➡️ ${item.score} ${' '} ✔️</br>
     `;
-    parentList.appendChild(li);
-  });
+        parentList.appendChild(li);
+      });
+    });
 };
 
-renderScore();
+refresh.addEventListener('click', (e) => {
+  e.preventDefault();
+  renderScore();
+});
 
 submit.addEventListener('click', (e) => {
   e.preventDefault();
-  scoreBoard = addScore(insertedName.value, insertedScore.value, scoreBoard);
+  sendScore(api, insertedName.value, insertedScore.value);
   renderScore();
   form.reset();
 });
+renderScore();

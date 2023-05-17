@@ -9,6 +9,7 @@ $fontsize-M: 16px;
 $fontsize-XL: 34px;
 
 * {
+  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -29,7 +30,7 @@ body {
     border: 2px solid $color-b;
     cursor: pointer;
     border-radius: 3px;
-    padding-block: 3%;
+    padding-block: 2%;
     width: 20%;
     background-color: $color-blue;
     font-size: $fontsize-M;
@@ -95,6 +96,7 @@ body {
       flex-direction: column;
       border-right: 5px dotted $color-blue;
       width: 47%;
+      box-sizing: content-box;
       border: 5px dotted $color-blue;
 
       .left-top {
@@ -121,6 +123,10 @@ body {
 
         ul {
           margin-left: -38px;
+
+          li {
+            margin-bottom: 15px;
+          }
 
           li:nth-child(even) {
             background-color: $color-grey;
