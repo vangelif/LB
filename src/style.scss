@@ -9,7 +9,6 @@ $fontsize-M: 16px;
 $fontsize-XL: 34px;
 
 * {
-  box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
@@ -45,7 +44,6 @@ body {
     .right {
       display: flex;
       width: 47%;
-
       div {
         display: flex;
         flex-direction: column;
@@ -96,7 +94,6 @@ body {
       flex-direction: column;
       border-right: 5px dotted $color-blue;
       width: 47%;
-      box-sizing: content-box;
       border: 5px dotted $color-blue;
 
       .left-top {
@@ -126,6 +123,8 @@ body {
 
           li {
             margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
 
           li:nth-child(even) {
