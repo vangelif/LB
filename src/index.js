@@ -8,7 +8,8 @@ const parentList = document.getElementById('parent-list');
 const form = document.getElementById('form');
 const refresh = document.getElementById('refresh');
 
-const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VangelisGames/scores/';
+const api =
+  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VangelisGames/scores/';
 
 const renderScore = async () => {
   parentList.innerHTML = '';
@@ -39,7 +40,7 @@ submit.addEventListener('click', (e) => {
   form.reset();
   setTimeout(() => {
     window.location.reload();
-  }, 1000);
+  }, 600);
 });
 
 renderScore();
